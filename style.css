@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: auto;
+}
+
+h1{
+    color: aquamarine;
+}
+
+#hero{
+    color: blueviolet;
+}
+
+#love{
+    color: palevioletred;
+}
+.lnct{
+    color: cadetblue;
+}
+
+div{
+    height: auto;
+    width: 200px;
+    background-color: coral;
+}
+
+    background-color brown
+    font s
+    font-family Arial, Helvetica, sans-serif
+    fontweight  
+    text-align  center
+    
+
+#gradient{
+    background:conic-gradient(violet,indigo,blue,green,orange,red,violet) ;
+    }
+    

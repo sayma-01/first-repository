@@ -1,0 +1,56 @@
+@font-face {
+    font-family:Rosellia ;
+    src: url(./Rosellia.otf);
+}   
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    text-align:left;    
+    background-color: #8ff02ebd;
+    background-size: cover;
+    background-image:url(https://images.pexels.com/photos/2305765/pexels-photo-2305765.jpeg);
+}
+
+#box{
+    font-size: 10em;
+    color: black;
+    font-family: Rosellia;
+    font-weight: 500;
+}
+
+#description{
+    font-size: 50px;
+    color: rgb(8, 8, 76);
+    font-weight: 100;
+    font-family: cursive;
+}
+
+button{
+    margin-left: 900px;
+    margin-top: 70px;
+    font-size: 2em;
+    color:rgb(12, 2, 17);
+    font-family: fantasy;
+    font-weight: 200;
+    padding: 0.5px 1px;
+    background-color: transparent;
+    border: 3pt solid rgb(15, 32, 49);
+    border-radius: 200pt
+    height 50px;
+    width: 200px;
+
+    
+}
+
+
+
