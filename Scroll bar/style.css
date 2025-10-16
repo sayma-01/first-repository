@@ -1,0 +1,113 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html,
+ body {
+     height: 100%;
+     width: 100%;
+ }
+
+#card-container{
+ padding: 20px 20px;
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+display: flex;
+justify-content: space-evenly;
+align-items: space-evenly;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    gap: 20px;
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 20px; /* space for scrollbar */
+}
+
+ .card{
+    flex-shrink: 0;
+    overflow: auto;
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 10px 10px rgba(54, 46, 46, 0.3);
+    transition: all 1s ease;
+    cursor: pointer;
+ }
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.bottom{
+    color: rgb(247, 229, 229);
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: -40%;
+    background:linear-gradient(transparent,rgb(61, 52, 52));
+    transition: all 0.5s ease;
+    display: flex ; 
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.bottom i{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom .text-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card:hover .bottom{
+    bottom: 0;
+}
+
+.bottom:hover i{
+    color: tomato;
+    transition:  all step-start o.3s;
+}
+
+.bottom:hover i:active{
+    color: red;
+}
+
+.bottom h3{
+    font-size: 1rem;
+    font-weight: 50;
+}
+
+.bottom h4{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+#card-container::-webkit-scrollbar {
+    height: 8px; /* horizontal scrollbar thickness */
+  background: rgb(225, 207, 242);
+}
+
+#card-container::-webkit-scrollbar-thumb {
+    background: rgb(205, 135, 242);
+  border-radius: 10px;
+}
+
+#parent::-webkit-scrollbar {
+    width: 8px; /* vertical scrollbar thickness */
+  background: rgb(225, 207, 242);
+}
+
+#parent::-webkit-scrollbar-thumb {
+    background: rgb(205, 135, 242);
+  border-radius: 10px;
+}
