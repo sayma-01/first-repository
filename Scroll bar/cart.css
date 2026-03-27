@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    background-color: #f4f4f5;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.nav i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cartexpnd {
+    display: none;
+    width: 200px;
+    background-color: #2424d9;
+    border-radius: 10px;
+    position: absolute;
+    top: 80%;
+    right: 20px;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background-color: #e4e4e7;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.filter-btn {
+    padding: 12px 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.products img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Categories */
+.categories {
+    padding: 30px 0 30px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.categories::-webkit-scrollbar {
+    display: none;
+}
+
+.icon {
+    padding: 20px 24px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icon.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    color: #fbbf24;
+}
+
+.icon i {
+    font-size: 20px;
+}
+
+/* Products */
+.products {
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+.products::-webkit-scrollbar {
+    display: none;
+}
+
+.product {
+    background-color: white;
+    border-radius: 12px;
+    padding: 8px;
+    min-width: 250px;
+}
+
+.product .image {
+    width: 224px;
+    height: 208px;
+    background-color: #e4e4e7;
+    border-radius: 12px;
+}
+
+.product .data {
+    padding: 20px 8px;
+}
+
+.product h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.025em;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price-info h3 {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.2;
+}
+
+.price-info h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.add-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fbbf24;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popular Section */
+.popular-section {
+    margin-top: 20px;
+}
+
+.popular-section h3 {
+    font-size: 24px;
+    padding-left: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.populars {
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.populars::-webkit-scrollbar {
+    display: none;
+}
+
+.popular {
+    background-color: white;
+    padding: 8px;
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 60%;
+    flex-shrink: 0;
+}
+
+.popular-image {
+    width: 80px;
+    height: 80px;
+    background-color: #ef4444;
+    border-radius: 16px;
+    border: 4px solid white;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.popular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popular-data {
+    padding: 8px 0;
+    width: 100%;
+}
+
+.popular-data h1 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.popular-data h4 {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.2;
+    margin-top: 8px;
+    line-height: 1;
+}
+
+.popular-data .price {
+    margin-top: 12px;
+    color: #71717a;
+    opacity: 1;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    gap: 40px;
+}
+
+.footer i {
+    font-size: 20px;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.footer i.active {
+    color: #69628a;
+    opacity: 1;
+}
+
+.footer-center {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -33%);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fbbf24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    opacity: 1;
+}
+.products::-webkit-scrollbar{
+    display: none;
+}
+
+.categories::-webkit-scrollbar{
+    display: none;
+}
+
+.populars::-webkit-scrollbar{
+    display: none;
+}
+
+.shader{
+    background: linear-gradient(to right bottom, #69628a, #040309);
+}

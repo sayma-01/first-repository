@@ -24,7 +24,6 @@ html,
         width: 350px;
         border-radius: 10px;
         margin: auto;
-        overflow: auto;
     }
 
     .all-reels{
@@ -43,18 +42,21 @@ html,
         height: 100%;
         width: 100%;
         position: relative;
-        border-radius: 10px;
+        border-radius: 25px;
+         margin-bottom: 20px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
     }
 
-    .reel img{
+    .reel video{  
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
 
-.reel bottom{
+.reel .bottom{
 padding: 30px 20px;
-    width: 100px;
+    width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.794));
     position: absolute;
     bottom: 0;
@@ -64,22 +66,24 @@ padding: 30px 20px;
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
-.bottom .user .img{
+.bottom .user img{
     height: 25px;
     width: 25px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .bottom .user .h4{
     font-size: 15px;
     font-weight: 500;
-
 }
 
-.bottom .user .button{
+.bottom .user button{
     background-color: transparent;
+    color: white;
     padding: 2px 4px;
     font-size: 13px;
     font-weight: 500;
@@ -100,6 +104,7 @@ padding: 30px 20px;
     padding: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     text-align: center;
 }
@@ -119,5 +124,43 @@ padding: 30px 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50px;
+    cursor: pointer;
 }
+
+.love{
+    color: red;
+}
+
+.right>div h4{
+    pointer-events: none;
+}
+
+.right>div h6{
+    pointer-events: none;
+}
+
+.mute{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;   
+    height: 40px; 
+    background-color: #333;
+}
+
+.mute i{
+    font-size: 22px;
+    pointer-events: none;
+}
+
+.mute:active{
+    scale: 0.95;
+}
+
 
