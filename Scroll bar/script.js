@@ -1,34 +1,34 @@
 
-let img = [{name:'shadow',img:'https://plus.unsplash.com/premium_photo-1764546930278-737f17268e92?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8'},
-    {name:'friends',img:'https://images.unsplash.com/photo-1761839258045-6ef373ab82a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8'},
-    {name:'dog',img:'https://images.unsplash.com/photo-1763718170991-baa67106743b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8'},
-    {name:'nature',img:'https://plus.unsplash.com/premium_photo-1764684530239-21ef385b5e36?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D'},
-    {name:'3d',img:'https://plus.unsplash.com/premium_photo-1764491465854-892fbe15b7f7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D'},
-    {name:'knot',img:'https://images.unsplash.com/photo-1767173079032-c0290f60b8ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D'},
-    {name:'diwali',img:'https://images.unsplash.com/photo-1767464949351-0fc591e59b78?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D'},
-    {name:'cool',img:'https://plus.unsplash.com/premium_photo-1673375651830-3e9a83284a21?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3NHx8fGVufDB8fHx8fA%3D%3D'},
-    {name:'bird',img:'https://images.unsplash.com/photo-1767288832044-c522467b24e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4Mnx8fGVufDB8fHx8fA%3D%3D'},
-    {name:'snow',img:'https://plus.unsplash.com/premium_photo-1737912827908-9c83e58c7dd6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5M3x8fGVufDB8fHx8fA%3D%3D'},
-    {name:'breakfast',img:'https://images.unsplash.com/photo-1767277672167-18105701959b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDN8fHxlbnwwfHx8fHw%3D'},
-    {name:'sunset',img:'https://images.unsplash.com/photo-1767277672167-18105701959b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDN8fHxlbnwwfHx8fHw%3D'},
-    {name:'mountain',img:'https://plus.unsplash.com/premium_photo-1673375651830-3e9a83284a21?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3NHx8fGVufDB8fHx8fA%3D%3D'},
-    {name:'river',img:'https://images.unsplash.com/photo-1767464949351-0fc591e59b78?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D'},
-    {name:'forest',img:'https://images.unsplash.com/photo-1767173079032-c0290f60b8ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D'},
-    {name:'city',img:'https://plus.unsplash.com/premium_photo-1764491465854-892fbe15b7f7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D'},
-    {name: "Petals of roses", img: "https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?q=80&w=3786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-    {name: "Animals of town", img: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    {name: "the crowd of city", img: "https://images.unsplash.com/photo-1517732306149-e8f829eb588a?q=80&w=3872&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    {name: "fruits of planet", img: "https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?q=80&w=3764&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    {name: "orange peeled", img: "https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=3337&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-    {name: "web design", img: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-    {name: "apple juice", img: "https://images.unsplash.com/photo-1576673442511-7e39b6545c87?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}]
+let img = [{name:'shadow',img:'https://plus.unsplash.com/premium_photo-1764546930278-737f17268e92?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8', cap:'brings light to life'},
+    {name:'friends',img:'https://images.unsplash.com/photo-1761839258045-6ef373ab82a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8', cap:'zindagi na milegi dobara'},
+    {name:'dog',img:'https://images.unsplash.com/photo-1763718170991-baa67106743b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8', cap:'if there is a will there is a way'},
+    {name:'nature',img:'https://plus.unsplash.com/premium_photo-1764684530239-21ef385b5e36?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D', cap:'dont use shortcuts in life'},
+    {name:'3d',img:'https://plus.unsplash.com/premium_photo-1764491465854-892fbe15b7f7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D', cap:'bla bla bla '},
+    {name:'knot',img:'https://images.unsplash.com/photo-1767173079032-c0290f60b8ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D', cap:'when you are outing with friends'},
+    {name:'diwali',img:'https://images.unsplash.com/photo-1767464949351-0fc591e59b78?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D', cap:'food is the first love'},
+    {name:'cool',img:'https://plus.unsplash.com/premium_photo-1673375651830-3e9a83284a21?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3NHx8fGVufDB8fHx8fA%3D%3D', cap:'dating a google guy'},
+    {name:'bird',img:'https://images.unsplash.com/photo-1767288832044-c522467b24e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4Mnx8fGVufDB8fHx8fA%3D%3D', cap:'best whether : snow fall'},
+    {name:'snow',img:'https://plus.unsplash.com/premium_photo-1737912827908-9c83e58c7dd6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5M3x8fGVufDB8fHx8fA%3D%3D', cap:'roads without traffic '},
+    {name:'breakfast',img:'https://images.unsplash.com/photo-1767277672167-18105701959b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDN8fHxlbnwwfHx8fHw%3D', cap:'an apple a day keeps the doctor away'},
+    {name:'sunset',img:'https://images.unsplash.com/photo-1767277672167-18105701959b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDN8fHxlbnwwfHx8fHw%3D', cap:'swag se swagat'},
+    {name:'mountain',img:'https://plus.unsplash.com/premium_photo-1673375651830-3e9a83284a21?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3NHx8fGVufDB8fHx8fA%3D%3D', cap:'diwali festival hits different'},
+    {name:'river',img:'https://images.unsplash.com/photo-1767464949351-0fc591e59b78?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D', cap:'exam days'},
+    {name:'forest',img:'https://images.unsplash.com/photo-1767173079032-c0290f60b8ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D', cap:'studying is a habit'},
+    {name:'city',img:'https://plus.unsplash.com/premium_photo-1764491465854-892fbe15b7f7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D', cap:'dog lovers'},
+    {name: "Petals of roses", img: "https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?q=80&w=3786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", cap:'clear sky'},
+    {name: "Animals of town", img: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", cap:'greener areas' },
+    {name: "the crowd of city", img: "https://images.unsplash.com/photo-1517732306149-e8f829eb588a?q=80&w=3872&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", cap:'oranges with vitamin c' },
+    {name: "fruits of planet", img: "https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?q=80&w=3764&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", cap:'roses are red...' },
+    {name: "orange peeled", img: "https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=3337&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", cap:'sparrow are going to extinct'},
+    {name: "web design", img: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", cap:'coding journey'},
+    {name: "apple juice", img: "https://images.unsplash.com/photo-1576673442511-7e39b6545c87?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", cap:'a for apple'}]
 
 function cards(){
     let clutter = ''
     img.forEach(function(obj){
         clutter += `<div class="box">
         <img src="${obj.img}" alt="">
-        <div class="caption">Lorem ipsum dolor sit amet</div>
+        <div class="caption">${obj.cap}</div>
         </div>`
     })
     let contain = document.querySelector('.container')
@@ -126,9 +126,9 @@ down.addEventListener('click',function(){
         grow++;
         percent.innerHTML = grow + '%';
         bar.style.width = grow + '%';
-    //    if(grow === 100){
-    //     clearInterval(set)
-    //    }
+       if(grow === 100){
+        clearInterval(set)
+       }
     },time);
 
     setTimeout(function(){
@@ -201,9 +201,9 @@ win.addEventListener('click',function(){
     h3.innerHTML = 'trophies:' + ipl.trophies
     body.style.backgroundColor = ipl.primary
 })
-let arr = ['alice','bob','charlie','david','eve','frank','grace','heidi','ivan','judy','karen','leo','mike','nancy','oscar','peggy','quinn','rachel','sam','trudy','uma','victor','wendy','xander','yvonne','zack'];
-let a = Math.floor(Math.random()*arr.length)
-console.log(arr[a]);
+// let arr = ['alice','bob','charlie','david','eve','frank','grace','heidi','ivan','judy','karen','leo','mike','nancy','oscar','peggy','quinn','rachel','sam','trudy','uma','victor','wendy','xander','yvonne','zack'];
+// let a = Math.floor(Math.random()*arr.length)
+// console.log(arr[a]);
 
 let teams = [
     {Team:'MI',
@@ -278,9 +278,9 @@ let teams = [
    }
 ]
 
-let e = document.createElement('h1')
-e.innerText = 'Hello World'
-console.log(e);
+// let e = document.createElement('h1')
+// e.innerText = 'Hello World'
+// console.log(e);
 let stories = [
     {dp:"https://images.unsplash.com/photo-1522973717924-b10fe4e185cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y291cGxlc3xlbnwwfHwwfHx8MA%3D%3D",story:"https://images.unsplash.com/photo-1566759996874-04d713cc224a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y291cGxlc3xlbnwwfHwwfHx8MA%3D%3D"}
     ,{dp:"https://plus.unsplash.com/premium_photo-1687118731563-ce48ca657778?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D",story:"https://plus.unsplash.com/premium_photo-1747851576628-02ab6241dff3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4OHx8fGVufDB8fHx8fA%3D%3D"},
@@ -329,13 +329,13 @@ elem.forEach(function(val){
     val.addEventListener('mouseleave',function(){
         val.childNodes[3].style.opacity = 0
     })
-    var h1 = document.querySelector('h1')
-    let btn = document.querySelector('#box button')
-    let dec = document.querySelector('#d')
-    let bulb = document.querySelector('#bulb')
-    var button = document.querySelector('#on button')
-    let body = document.querySelector('main')
-    let crsr = document.querySelector('.cursor')
+    var h1 = document.querySelector('h1');
+    let box = document.querySelector('#box');
+    let decre = document.querySelector('#d');
+    let bulb = document.querySelector('#bulb');
+    var button = document.querySelector('#on button');
+    let body = document.querySelector('main');
+    let crsr = document.querySelector('.cursor');
 })
 body.addEventListener('mousemove',function(dets){
     crsr.style.left = dets.pageX + "px"
@@ -345,7 +345,7 @@ body.addEventListener('mousemove',function(dets){
 
 
 let counter = 0;
-btn.addEventListener('click', function() {
+box.addEventListener('click', function() {
     counter++;
     h1.innerHTML = counter
     h1.style.color = 'royalblue'
@@ -354,7 +354,7 @@ btn.addEventListener('click', function() {
     h1.style.fontWeight = '600'
 })
 
-dec.addEventListener('click', function() {
+decre.addEventListener('click', function() {
     counter--;
     h1.innerHTML = counter
     h1.style.color = 'orange'

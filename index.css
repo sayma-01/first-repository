@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family:Rosellia ;
     src: url(./Rosellia.otf);
-}   
+}    */
 *{
     margin:0;
     padding:0;
@@ -12,26 +12,44 @@ html,body{
     height: 100%;
     width: 100%;
 }
+
+:root{
+    --x: 400px;
+    --y: 400px;
+}
+
+body{
+   height: 100%;
+    width: 100%;
+    text-align:left;    
+    background-size: cover;
+    background-image:url(https://images.pexels.com/photos/2305765/pexels-photo-2305765.jpeg);
+ 
+}
 #main{
     height: 100%;
+    width: 100%;
+    background: radial-gradient(300px at var(--x) var(--y), rgba(255, 255, 255, 0) 0%,rgba(0, 0, 0, 0.556) 80%, rgba(0, 0, 0, 0.834));
+    /* height: 100%;
     width: 100%;
     text-align:left;    
     background-color: #8ff02ebd;
     background-size: cover;
     background-image:url(https://images.pexels.com/photos/2305765/pexels-photo-2305765.jpeg);
+} */
 }
 
 #box{
     font-size: 10em;
     color: black;
-    font-family: Rosellia;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
 }
 
 #description{
     font-size: 50px;
-    color: rgb(8, 8, 76);
-    font-weight: 100;
+    color: rgb(59, 3, 3);
+    font-weight: 100;   
     font-family: cursive;
 }
 
@@ -39,14 +57,14 @@ button{
     margin-left: 900px;
     margin-top: 70px;
     font-size: 2em;
-    color:rgb(12, 2, 17);
+    color:rgb(215, 214, 216);
     font-family: fantasy;
-    font-weight: 200;
+    font-weight: 100;
     padding: 0.5px 1px;
     background-color: transparent;
-    border: 3pt solid rgb(15, 32, 49);
-    border-radius: 200pt
-    height 50px;
+    border: 3pt solid rgb(19, 19, 20);
+    border-radius: 200pt;
+    height: 50px;
     width: 200px;
 
     

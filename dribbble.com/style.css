@@ -72,6 +72,7 @@ section a{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.1s;
 }
 
 section button{

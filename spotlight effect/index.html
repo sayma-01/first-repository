@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Laptop Home Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="desktop" id="desktop">
+        <img src="https://images.unsplash.com/photo-1466853817435-05b43fe45b39?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="">
+        <!-- Desktop Icons -->
+
+        <div class="desktop-icon" draggable="true">
+            <div class="icon-image">📁</div>
+            <div class="icon-label">My Computer</div>
+        </div>
+        <div class="desktop-icon" draggable="true">
+            <div class="icon-image">📁</div>
+            <div class="icon-label">Documents</div>
+        </div>
+        <div class="desktop-icon" draggable="true">
+            <div class="icon-image"><i class="ri-delete-bin-line"></i></div>
+            <div class="icon-label">Recycle Bin</div>
+        </div>
+        <div class="desktop-icon" draggable="true">
+            <div class="icon-image">⚙️</div>
+            <div class="icon-label">Settings</div>
+        </div>
+    </div>
+
+    <!-- Context Menu -->
+    <div class="context-menu" id="contextMenu">
+        <div class="context-item" data-action="refresh"><i class="ri-refresh-line"></i> Refresh</div>
+        <div class="context-item" data-action="new-folder">📁 New Folder</div>
+        <div class="context-item" data-action="new-file">📄 New File</div>
+        <hr class="context-divider">
+        <div class="context-item" data-action="paste">📋 Paste</div>
+        <hr class="context-divider">
+        <div class="context-item" data-action="display">🖥️ Display Settings</div>
+        <div class="context-item" data-action="properties">ℹ️ Properties</div>
+    </div>
+
+    <!-- Taskbar -->
+    <div class="taskbar">
+        <div class="taskbar-left">
+            <div id="weather-widget">
+            <p id="temperature">--°C</p>
+            <p id="windSpeed">--</p>
+        </div>
+    </div>
+    
+<div class="taskbar-center">
+    <button class="start-button" id="startBtn"><i class="ri-microsoft-fill"></i></button>
+    <div class="taskbar-search">
+        <input type="text" placeholder="Search...">
+        <span>🔍</span>
+    </div> 
+            <div class="taskbar-app" title="File Explorer">📁</div>
+            <div class="taskbar-app" title="Chrome"><i class="ri-chrome-fill"></i></div>
+            <div class="taskbar-app" title="VS Code">💻</div>
+            <div class="taskbar-app" title="Settings">⚙️</div>
+            <div class="taskbar-app" title="Copilot"><i class="ri-microsoft-copilot-fill"></i></div>
+        </div>
+
+        <div class="taskbar-right">
+            <div class="system-tray">
+                <span title="WiFi"><i class="ri-wifi-line"></i></span>
+                <span title="Volume"><i class="ri-volume-up-fill"></i></span>
+                <span title="Battery"><i class="ri-battery-charge-fill"></i></span>
+                
+            </div>
+                <span class="date" id="date">Monday, January 1, 2023</span>
+                <span class="time" id="time">12:00 PM</span>
+    </div>
+
+    <!-- Start Menu -->
+    <div class="start-menu" id="startMenu">
+        <div class="start-menu-header">
+            <div class="user-section">
+                <div class="user-avatar">👤</div>
+                <div class="user-info">
+                    <div class="user-name">User</div>
+                    <div class="user-status">Online</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="start-menu-search">
+            <input type="text" placeholder="Type here to search">
+        </div>
+
+        <div class="start-menu-apps">
+            <div class="app-tile">📧 Mail</div>
+            <div class="app-tile">📷 Photos</div>
+            <div class="app-tile">🎮 Games</div>
+            <div class="app-tile">🎵 Music</div>
+            <div class="app-tile">📺 Videos</div>
+            <div class="app-tile">📝 Notes</div>
+        </div>
+
+        <div class="start-menu-footer">
+            <div class="menu-item">⚙️ Settings</div>
+            <div class="menu-item">🔌 Power</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

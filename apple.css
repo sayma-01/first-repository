@@ -42,6 +42,17 @@ html,body{
     font-weight: 100;
 }
 
+#nav h4:hover{
+    transform: scale(1.2) !important;
+    color:  orange;
+    cursor: pointer;
+}
+
+#nav:has(h4:hover){
+    transform: scale(0.9);
+    transition: all 0.5s linear;
+}
+
 #header{
     text-align: center;
     color: white;
@@ -76,4 +87,13 @@ html,body{
     border: none;
     padding: 10px 20px;
     border: none;
+}
+
+#footer button:hover{
+    color: whitesmoke;
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    background-color: transparent;
+    border: rgb(62, 115, 249) solid 1px;
+    cursor: pointer;
 }
